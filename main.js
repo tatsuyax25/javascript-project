@@ -8,3 +8,7 @@ console.log(typeof fs);
 fs.writeFile('./hello.text', 'Hello!', function() {
   console.log('done creating file');
 });
+
+let daysOfWeek = require('./days-of-week');
+let day = daysOfWeek.getWeekday(5);
+console.log(day);
